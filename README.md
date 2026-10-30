@@ -92,4 +92,3 @@ pm2 reload cwfly-docs     # 若用 Node 服务托管
 | [CWFLY-ATC](https://github.com/yuanshen-123-ui/CWFLY-ATC) | 管制中心（其 `docs/` 为管制资料中心，与本仓库定位不同） |
 | [CWFLY-BOT](https://github.com/yuanshen-123-ui/CWFLY-BOT) | QQ 机器人 |
 
-> 本仓库由 CWFLY 主仓库于 2026-10-30 拆分而来，初始提交为当时快照（不含历史）。
