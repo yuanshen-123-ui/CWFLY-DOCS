@@ -1,0 +1,189 @@
+/* CWFLY Docs - Apple 风格白色主题 */
+:root {
+  --vp-c-brand-1: #0071e3;
+  --vp-c-brand-2: #0077ed;
+  --vp-c-brand-3: #006edb;
+  --vp-c-brand-soft: rgba(0, 113, 227, 0.06);
+
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #fbfbfd;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #f5f5f7;
+
+  --vp-c-text-1: #1d1d1f;
+  --vp-c-text-2: #424245;
+  --vp-c-text-3: #86868b;
+
+  --vp-c-border: rgba(0, 0, 0, 0.06);
+  --vp-c-divider: rgba(0, 0, 0, 0.04);
+  --vp-c-gutter: rgba(0, 0, 0, 0.02);
+
+  --vp-c-gray-1: #f5f5f7;
+  --vp-c-gray-2: #e8e8ed;
+  --vp-c-gray-3: #d2d2d7;
+  --vp-c-default-1: #f5f5f7;
+  --vp-c-default-2: #e8e8ed;
+  --vp-c-default-3: #d2d2d7;
+}
+
+/* 导航栏 - Apple 毛玻璃效果 */
+.VPNavBar {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+.VPNavBar .title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+}
+
+.VPNavBar .VPNavBarMenuLink .text,
+.VPNavBar .VPNavBarMenuGroup .text {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.01em;
+}
+
+/* Hero 区域 */
+.VPHomeHero {
+  padding-top: 64px !important;
+  padding-bottom: 48px !important;
+}
+
+.VPHomeHero .name span {
+  background: none !important;
+  -webkit-text-fill-color: var(--vp-c-text-1) !important;
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+}
+
+.VPHomeHero .text {
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  color: var(--vp-c-text-2) !important;
+  letter-spacing: -0.01em !important;
+}
+
+.VPHomeHero .tagline {
+  font-size: 16px !important;
+  color: var(--vp-c-text-3) !important;
+  max-width: 600px !important;
+  margin: 12px auto 0 !important;
+}
+
+/* 按钮 */
+.VPButton.brand {
+  background: var(--vp-c-brand-1) !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  border-radius: 980px !important;
+  padding: 8px 22px !important;
+  transition: all 0.2s !important;
+}
+
+.VPButton.brand:hover {
+  background: var(--vp-c-brand-2) !important;
+}
+
+.VPButton.alt {
+  border: 1px solid var(--vp-c-gray-2) !important;
+  color: var(--vp-c-brand-1) !important;
+  background: transparent !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  border-radius: 980px !important;
+  padding: 8px 22px !important;
+  transition: all 0.2s !important;
+}
+
+.VPButton.alt:hover {
+  border-color: var(--vp-c-brand-1) !important;
+  background: rgba(0, 113, 227, 0.04) !important;
+}
+
+/* 侧边栏 */
+.VPSidebar {
+  background: var(--vp-c-bg-alt) !important;
+  border-right: 1px solid var(--vp-c-divider) !important;
+}
+
+.VPSidebar .group + .group {
+  border-top: 1px solid var(--vp-c-divider) !important;
+}
+
+/* 底部 */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-alt);
+  color: var(--vp-c-text-3);
+  font-size: 12px;
+}
+
+/* 卡片 */
+.VPFeature {
+  background: var(--vp-c-bg-elv) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  border-radius: 12px !important;
+  transition: all 0.2s !important;
+}
+
+.VPFeature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* 代码块 */
+.vp-adaptive-theme {
+  background: #f5f5f7 !important;
+  border: 1px solid var(--vp-c-border) !important;
+  border-radius: 10px !important;
+}
+
+/* 内容区链接 */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+  text-decoration: underline;
+}
+
+/* 标题 */
+.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc h1 {
+  font-size: 36px;
+  letter-spacing: -0.03em;
+}
+
+/* 表格 */
+.vp-doc table {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.vp-doc td, .vp-doc th {
+  border: 1px solid var(--vp-c-divider);
+  padding: 10px 14px;
+}
